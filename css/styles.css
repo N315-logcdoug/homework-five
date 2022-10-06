@@ -12,4 +12,76 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
+@font-face {
+  font-family: SegoeRegular;
+  src: url(../fonts/segoeui.ttf);
+}
+
+@font-face {
+  font-family: SegoeBold;
+  src: url(../fonts/segoeuib.ttf);
+}
+
+@font-face {
+  font-family: SegoeItalic;
+  src: url(../fonts/segoeuii.ttf);
+}
+
+@font-face {
+  font-family: SegoeLight;
+  src: url(../fonts/segoeuil.ttf);
+}
+
+@font-face {
+  font-family: SegoeLimelight;
+  src: url(../fonts/segoeuisl.ttf);
+}
+
+@font-face {
+  font-family: SegoeBoldItalic;
+  src: url(../fonts/segoeuiz.ttf);
+}
+
+@font-face {
+  font-family: SegoeBlack;
+  src: url(../fonts/seguibl.ttf);
+}
+
+@font-face {
+  font-family: SegoeBlackItalic;
+  src: url(../fonts/seguibli.ttf);
+}
+
+@font-face {
+  font-family: SegoeLightItalic;
+  src: url(../fonts/seguili.ttf);
+}
+
+@font-face {
+  font-family: SegoeSemibold;
+  src: url(../fonts/seguisb.ttf);
+}
+
+@font-face {
+  font-family: SegoeSemiboldItalic;
+  src: url(../fonts/seguisbi.ttf);
+}
+
+@font-face {
+  font-family: SegoeSemilightItalic;
+  src: url(../fonts/seguisli.ttf);
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-family: SegoeRegular;
+}
+
 /*# sourceMappingURL=styles.css.map */
