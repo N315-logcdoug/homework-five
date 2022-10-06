@@ -72,21 +72,77 @@ h1, h2, h3, h4, h5, h6, p {
   src: url(../fonts/seguisli.ttf);
 }
 
+.header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  padding-left: 30px;
+  align-items: flex-end;
+}
+
+.logo img {
+  height: 68px;
+  width: 68px;
+}
+
 .logo p {
   font-family: SegoeRegular;
   font-size: 12px;
+  margin-left: 55px;
 }
 
 nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: right;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   color: #000000;
   font-family: SegoeRegular;
+  font-size: 16px;
+  justify-content: right;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account img {
+  height: 40px;
+  width: 40px;
+  margin-left: 13px;
+}
+
+.account p {
+  margin: auto 0;
+}
+
+.shopping-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart img {
+  height: 40px;
+  width: 40px;
+}
+
+.shopping-cart p {
+  margin: auto 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
