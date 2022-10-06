@@ -153,10 +153,11 @@ a {
   height: 500px;
 }
 
-.hero-pic h2 {
+.hero-catchphrase h2 {
   font-family: SegoeBold;
   color: white;
-  
+  padding: 1150px, 45px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
