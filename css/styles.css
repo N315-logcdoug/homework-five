@@ -145,4 +145,18 @@ a {
   margin: auto 0;
 }
 
+.hero-pic {
+  background-image: url("../images/home-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.hero-pic h2 {
+  font-family: SegoeBold;
+  color: white;
+  
+}
+
 /*# sourceMappingURL=styles.css.map */
