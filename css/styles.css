@@ -72,6 +72,11 @@ h1, h2, h3, h4, h5, h6, p {
   src: url(../fonts/seguisli.ttf);
 }
 
+.logo p {
+  font-family: SegoeRegular;
+  font-size: 12px;
+}
+
 nav {
   display: flex;
   flex-flow: row nowrap;
