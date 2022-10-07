@@ -1,0 +1,25 @@
+.hero-pic {
+    background-image: url("../images/home-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+  
+  .hero-catchphrase {
+    padding-top: 180px;
+  }
+  
+  .hero-catchphrase h2 {
+    font-family: SegoeBold;
+    color: white;
+    padding-left: 1150px;
+    font-size: 30px;
+  }
+  
+  .hero-catchphrase p {
+    font-family: SegoeRegular;
+    padding-left: 1150px;
+    font-size: 12px;
+    color: white;
+  }

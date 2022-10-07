@@ -1,0 +1,49 @@
+.featured-books {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .book {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  
+  .american-classic {
+    background-image: url("../images/to-kill-a-mockingbird.jpg");
+  }
+  
+  .memoir {
+    background-image: url("../images/becoming.jpg");
+  }
+  
+  .horror {
+    background-image: url("../images/firestarter.jpg");
+  }
+  
+  .book-description-price {
+    padding-top: 340px;
+  }
+  
+  .book-description-price p {
+    font-family: SegoeRegular;
+  }
+  
+  .book-description-price h2 {
+    font-family: SegoeBold;
+  }
+  
+  .add-to-cart-button {
+    background-color: white;
+    border-color: 2px solid #000000;
+    height: 80px;
+    width: 213px;
+    font-family: SegoeBold;
+    margin-right: 420px;
+  }

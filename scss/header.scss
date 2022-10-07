@@ -1,0 +1,96 @@
+.header-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  
+  .logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    padding-left: 30px;
+    align-items: flex-end;
+  }
+  
+  .logo img {
+    height: 68px;
+    width: 68px;
+  }
+  
+  .logo p {
+    font-family: SegoeRegular;
+    font-size: 12px;
+    margin-left: 55px;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-family: SegoeRegular;
+    font-size: 16px;
+    justify-content: right;
+  }
+  
+  .account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .account img {
+    height: 40px;
+    width: 40px;
+    margin-left: 13px;
+  }
+  
+  .account p {
+    margin: auto 0;
+  }
+  
+  .shopping-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .shopping-cart img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .shopping-cart p {
+    margin: auto 0;
+  }
+  
+  .searchbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #email {
+    border: 2px solid #707070;
+    background-color: #587C83;
+    opacity: 35%;
+    height: 45px;
+    width: 300px;
+  }
+  
+  .searchbar img {
+    height: 25px;
+    margin-left: 13px;
+  }
+
+  ::placeholder {
+    color: black;
+  }
