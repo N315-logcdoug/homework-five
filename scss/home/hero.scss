@@ -1,0 +1,38 @@
+.hero-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 158px;
+
+  .hero-pic {
+    width: 1500px;
+    background-image: url("../images/home-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+
+    .hero-catchphrase {
+      position:absolute;
+      right: 182px;
+      top: 196px;
+
+      h2 {
+        font-family: SegoeBold;
+        color: white;
+        font-size: 30px;
+        width: 265px;
+      }
+
+      p {
+        font-family: SegoeRegular;
+        font-size: 12px;
+        color: white;
+      }
+
+    }
+  }
+}
+  
+  

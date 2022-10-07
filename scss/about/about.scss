@@ -1,0 +1,58 @@
+.about-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 291px;
+
+    .about-section {
+        width: 1500px;
+        min-height: 500px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 170px;
+
+
+        .about-photo {
+            width: 393px;
+            height: 587px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .about-section-content {
+            width: 1000px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .about-header {
+                font-family: SegoeBold;
+                font-size: 32px;
+                text-align: center;
+                margin: 0;
+            }
+
+            .about-section-subtitle {
+                font-family: SegoeBold;
+                font-size: 26px;
+                margin-bottom: 0;
+                margin-top: 40px;
+            }
+
+            .about-section-body {
+                font-family: SegoeBold;
+                font-size: 16px;
+                margin-top: 61px;
+            }
+        }
+    }
+
+}
