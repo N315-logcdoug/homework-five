@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework Five</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <div class="header-container">
@@ -14,7 +15,7 @@
         <p>The BookNook</p>
       </div>
       <div class="searchbar">
-        <img src="images/search.png" alt="search">
+        <i class="fa fa-search"></i>
         <input type="text" id="email" name="email" placeholder="Search...">
       </div>
       <nav>
@@ -36,6 +37,7 @@
         </a>
       </nav>
     </div>
+
     <div class="hero-pic">
       <div class="hero-catchphrase">
         <h2>A PLACE IS</h2>
@@ -43,8 +45,51 @@
         <p>UNTIL IT HAS A BOOKSTORE</p>
       </div>
     </div>
+
+    <div class="featured-books">
+      <div class="book american-classic">
+        <div class="book-description-price">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.</p>
+          <h2>$15.99</h2>
+          <div class="add-to-cart-button">
+            <p>ADD TO CART</p>
+          </div>
+        </div>
+      </div>
+      <div class="book memoir">
+        <div class="book-description-price">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.</p>
+          <h2>$25.99</h2>
+          <div class="add-to-cart-button">
+            <p>ADD TO CART</p>
+          </div>
+        </div>
+      </div>
+      <div class="book horror">
+        <div class="book-description-price">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." Urna nunc id cursus metus aliquam eleifend mi. Massa vitae tortor condimentum lacinia quis vel eros.</p>
+          <h2>$19.99</h2>
+          <div class="add-to-cart-button">
+            <p>ADD TO CART</p>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <div id="app"></div>
+
+    <div class="footer">
+      <p>Copyright 2022, The BookNook</p>
+      <div class="footer-navigation">
+        <p>Home About Books Blog</p>
+      </div>
+      <div class="social-media">
+        <img src="images/facebook_w.png" alt="facebook">
+        <img src="images/instagram_w.png" alt="ig">
+        <img src="images/twitter_w.png" alt="twitter">
+      </div>
+    </div>
+
     <script src="lib/jquery-3.6.1.min.js"></script>
     <script src="app/model.js" type="module"></script>
     <script src="app/app.js" type="module"></script>
