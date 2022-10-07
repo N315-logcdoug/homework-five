@@ -20,7 +20,7 @@
   
   .logo p {
     font-family: SegoeRegular;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 55px;
   }
   
@@ -88,6 +88,7 @@
       display: flex;
       align-items: center;
       padding-right: 8px;
+      padding-left: 8px;
     }
   }
   
@@ -98,13 +99,13 @@
     opacity: 35%;
     height: 45px;
     width: 300px;
+
+    ::placeholder {
+      color: black;
+    }
   }
   
   .searchbar img {
     height: 25px;
     margin-left: 13px;
-  }
-
-  ::placeholder {
-    color: black;
   }
