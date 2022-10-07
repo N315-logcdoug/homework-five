@@ -70,16 +70,30 @@
   .shopping-cart p {
     margin: auto 0;
   }
+
+  
   
   .searchbar {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+
+    .search-icn {
+      border: 2px solid #707070;
+      border-right: none;
+      background-color: #587C83;
+      opacity: 35%;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      padding-right: 8px;
+    }
   }
   
   #email {
     border: 2px solid #707070;
+    border-left: none;
     background-color: #587C83;
     opacity: 35%;
     height: 45px;
