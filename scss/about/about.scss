@@ -1,11 +1,14 @@
 .about-content {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     p.about-header {
         font-family: SegoeBold;
         font-size: 32px;
+        text-align: center;
+        margin-top: 170px;
     }
 
     .about-section {
