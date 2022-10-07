@@ -245,7 +245,16 @@ a {
   margin-right: 420px;
 }
 
+.about-title {
+  display: flex;
+  flex-flow: ;
 
+}
+
+.about-title h2 {
+  font-family: SegoeBold;
+
+}
 
 .footer {
   display: flex;
@@ -261,6 +270,7 @@ a {
 .footer p {
   font-family: SegoeRegular;
   font-size: 14px;
+  color: azure;
 }
 
 .social-media img {
