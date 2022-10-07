@@ -3,13 +3,14 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 25px;
+    border: 1px solid $site-black;
   }
   
   .logo {
     display: flex;
     flex-flow: row nowrap;
     justify-content: left;
-    padding-left: 30px;
+    margin-left: 30px;
     align-items: flex-end;
   }
   
@@ -30,6 +31,21 @@
     justify-content: space-between;
     width: 40%;
     align-items: center;
+    position: relative;
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      right: 20px;
+
+      i {
+        font-size: 30px;
+      }
+    }
+
+    .nav-not-menu {
+      display: block;
+    }
   }
   
   a {
@@ -108,4 +124,25 @@
   .searchbar img {
     height: 25px;
     margin-left: 13px;
+  }
+
+  @media screen and (max-width: 1200px){
+    .logo {
+      margin-right: 20px;
+    }
+
+    .logo p {
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+
+    nav {
+      .nav-menu {
+        display: block;
+      }
+
+      .nav-not-menu {
+        display: none;
+      }
+    }
   }
