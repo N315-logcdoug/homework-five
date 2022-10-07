@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #587C83;
+  height: 45px;
+  font-size: 20px;
+  //margin-top: 500px;
+}
+
+.footer p {
+  font-family: SegoeRegular;
+  font-size: 14px;
+}
+
+.social-media img {
+  height: 25px;
+}
