@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   margin-top: 158px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   .hero-pic {
     width: 1500px;
@@ -67,6 +69,27 @@
         p {
           font-size: 7px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 566px){
+  .hero-container {
+    margin-top: 55px;
+    .hero-pic {
+      height: 193px;
+
+      .small-res-photo {
+        width: 116px;
+        height: 77px;
+        top: 56px;
+        left: 29px;
+      }
+
+      .hero-catchphrase {
+        top: 56px;
+        right: -138px;
       }
     }
   }

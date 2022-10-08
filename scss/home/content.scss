@@ -66,3 +66,63 @@
       }
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    .featured-books {
+      flex-direction: column;
+      gap: 50px;
+      margin-top: 66px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .featured-books{
+      .book {
+        .book-img {
+          width: 175px;
+          height: 281px;
+        }
+        .book-description-price{
+          font-size: 11px;
+
+          h2 {
+            font-size: 11px;
+          }
+
+          .add-to-cart-button{
+            width: 183px;
+            height: 49px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 422px){
+    .featured-books{
+      margin-top: 40px;
+      margin-bottom: 60px;
+      gap: 30px;
+      .book {
+        .book-img {
+          width: 70px;
+          height: 112px;
+        }
+        .book-description-price{
+          font-size: 6px;
+          width: 167px;
+          margin-top: 15px;
+
+          h2 {
+            font-size: 6px;
+          }
+
+          .add-to-cart-button{
+            width: 114px;
+            height: 30px;
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+  }
