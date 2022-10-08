@@ -20,6 +20,7 @@
   }
   
   .logo p {
+    white-space: nowrap;
     font-family: SegoeRegular;
     font-size: 16px;
     margin-left: 55px;
@@ -183,4 +184,40 @@
       display: none;
     }
   }
+
+@media screen and (max-width: 700px){
+  .header-container {
+    padding: 0;
+    height: 55px;
+  }
+
+  .logo{
+    margin-left: 10px;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 12px;
+      margin: 0;
+      margin-left: 10px;
+    }
+  }
+
+  .searchbar{
+
+    .search-icn {
+      height: 20px;
+    }
+  }
+
+  #email {
+    width: 142px;
+    height: 20px;
+  }
+}
 

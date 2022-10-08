@@ -13,6 +13,10 @@
     height: 500px;
     position: relative;
 
+    .small-res-photo {
+      display: none;
+    }
+
     .hero-catchphrase {
       position:absolute;
       right: 182px;
@@ -31,6 +35,39 @@
         color: white;
       }
 
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    margin-top: 88px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .hero-pic {
+      height: 329px;
+      background-image: none;
+      background-color: $site-teal;
+
+      .small-res-photo {
+        display: block;
+        position: absolute;
+        top: 74px;
+        left: 72px;
+      }
+
+      .hero-catchphrase{
+        right: -108px;
+        top: 108px;
+        h2 {
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 7px;
+        }
+      }
     }
   }
 }
