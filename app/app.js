@@ -17,6 +17,20 @@ function initURLListener() {
     changeRoute();
 }
 
+function navbarExpandListener() {
+    MODEL.navMenuChange("closed");
+    $(".nav-menu").click(function () {
+        var elmVal = $(".expanded-nav").attr("id");
+        if (elmVal == "closed") {
+            elmVal = "open";
+        } else {
+            elmVal = "closed";
+        }
+        MODEL.navMenuChange(elmVal);
+    });
+}
+
 $(document).ready(function () {
     initURLListener();
+    navbarExpandListener();
 });

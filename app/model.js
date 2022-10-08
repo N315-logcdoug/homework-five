@@ -1,4 +1,5 @@
 export function changePage(pageID, callback) {
+    navMenuChange("closed");
     if (pageID == '' || pageID == "home") {
         $.get(`pages/home.html`, function (data) {
             console.log('data ' + data);
@@ -11,4 +12,8 @@ export function changePage(pageID, callback) {
             $('#app').html(data);
         });
     }
+}
+
+export function navMenuChange(value) {
+    $(".expanded-nav").attr("id", value);
 }

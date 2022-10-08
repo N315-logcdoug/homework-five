@@ -7,7 +7,7 @@
 
     .about-section {
         width: 1500px;
-        min-height: 500px;
+        //min-height: 500px;
         display: flex;
         justify-content: space-between;
         margin-top: 170px;
@@ -55,4 +55,67 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1620px){
+    .about-content {
+        margin-bottom: 109px;
+        .about-section{
+            width: 647px;
+            margin-top: 61px;
+            .about-photo {
+                width: 208px;
+                height: 343px;
+                img {
+                    
+                }
+            }
+
+            .about-section-content {
+                width: 355px;
+                .about-header {
+                    font-size: 12px;
+                }
+
+                .about-section-subtitle {
+                    font-size: 8px;
+                }
+
+                .about-section-body {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-content {
+        //margin-bottom: 162px;
+        .about-section{
+            width: 287px;
+            margin-top: 61px;
+            .about-photo {
+                width: 73px;
+                height: 132px;
+            }
+
+            .about-section-content {
+                width: 197px;
+                .about-header {
+                    font-size: 6px;
+                }
+
+                .about-section-subtitle {
+                    font-size: 6px;
+                    margin-top: 16px;
+                }
+
+                .about-section-body {
+                    font-size: 6px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
 }

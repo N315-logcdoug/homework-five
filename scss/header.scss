@@ -20,6 +20,7 @@
   }
   
   .logo p {
+    white-space: nowrap;
     font-family: SegoeRegular;
     font-size: 16px;
     margin-left: 55px;
@@ -126,6 +127,37 @@
     margin-left: 13px;
   }
 
+  .expanded-nav {
+    display: flex;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  
+    div {
+      width: 200px;
+      height: 50px;
+      background-color: $site-teal;
+      color: $site-white;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+  
+    div:hover {
+      background-color: #6e9fa8;
+    }
+  }
+
+  #open {
+    display: block;
+  }
+
+  #closed {
+    display: none;
+  }
+
   @media screen and (max-width: 1200px){
     .logo {
       margin-right: 20px;
@@ -146,3 +178,46 @@
       }
     }
   }
+
+  @media screen and (min-width: 1201px){
+    #open {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 700px){
+  .header-container {
+    padding: 0;
+    height: 55px;
+  }
+
+  .logo{
+    margin-left: 10px;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 12px;
+      margin: 0;
+      margin-left: 10px;
+    }
+  }
+
+  .searchbar{
+
+    .search-icn {
+      height: 20px;
+    }
+  }
+
+  #email {
+    width: 142px;
+    height: 20px;
+  }
+}
+
