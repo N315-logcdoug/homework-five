@@ -1,0 +1,146 @@
+.books-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    gap: 200px;
+    margin-bottom: 196px;
+
+    .books-category {
+        width: 1764px;
+        display: flex;
+        flex-direction: column;
+
+        p.books-category-title {
+            font-family: SegoeBold;
+            font-size: 26px;
+        }
+
+        .books-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 65px;
+
+            .books-item {
+                width: 557px;
+                min-height: 311px;
+                display: flex;
+                justify-content: space-between;
+
+                .books-item-img {
+                    width: 206px;
+                    min-height: 311px;
+                    overflow: hidden;
+                    
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .books-item-details {
+                    width: 280px;
+                    min-height: 311px;
+                    position: relative;
+
+                    .books-item-desc {
+                        font-family: SegoeRegular;
+                        font-size: 16px;
+                    }
+
+                    .books-item-price {
+                        font-family: SegoeBold;
+                        font-size: 16px;
+                        margin-top: 40px;
+                    }
+
+                    a {
+                        button {
+                            @include button;
+                            position: absolute;
+                            bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1780px){
+    .books-content {
+        margin-top: 85px;
+        gap: 56px;
+        margin-bottom: 61px;
+    
+        .books-category {
+            width: 1200px;
+    
+            p.books-category-title {
+                font-family: SegoeBold;
+                font-size: 12px;
+            }
+    
+            .books-row {
+                margin-top: 20px;
+    
+                .books-item {
+                    width: 300px;
+                    min-height: 160px;
+    
+                    .books-item-img {
+                        width: 118px;
+                        min-height: 122px;
+                        overflow: hidden;
+                        
+                        img {
+                            width: 100%;
+                        }
+                    }
+    
+                    .books-item-details {
+                        width: 150px;
+                        min-height: 122px;
+                        position: relative;
+    
+                        .books-item-desc {
+                            font-family: SegoeRegular;
+                            font-size: 11px;
+                        }
+    
+                        .books-item-price {
+                            font-family: SegoeBold;
+                            font-size: 12px;
+                            margin-top: 16px;
+                        }
+    
+                        a {
+                            button {
+                                @include button;
+                                position: absolute;
+                                bottom: 0px;
+                                width: 126px;
+                                height: 38px;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1240px){
+    .books-content {
+        .books-category {
+            width: 294px;
+        }
+    }
+    
+
+    .books-row {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
