@@ -126,6 +126,37 @@
     margin-left: 13px;
   }
 
+  .expanded-nav {
+    display: flex;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  
+    div {
+      width: 200px;
+      height: 50px;
+      background-color: $site-teal;
+      color: $site-white;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+  
+    div:hover {
+      background-color: #6e9fa8;
+    }
+  }
+
+  #open {
+    display: block;
+  }
+
+  #closed {
+    display: none;
+  }
+
   @media screen and (max-width: 1200px){
     .logo {
       margin-right: 20px;
@@ -146,3 +177,10 @@
       }
     }
   }
+
+  @media screen and (min-width: 1201px){
+    #open {
+      display: none;
+    }
+  }
+
