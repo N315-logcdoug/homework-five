@@ -1,0 +1,9 @@
+@mixin button {
+    width: 222px;
+    height: 68px;
+    font-family: SegoeRegular;
+    font-size: 16px;
+    border: 1px solid $site-black;
+    background-color: $site-white;
+    cursor: pointer;
+}
