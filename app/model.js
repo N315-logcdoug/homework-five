@@ -121,6 +121,5 @@ export function navMenuChange(value) {
 
 export function addToCart(itemID) {
     cart.push(itemID);
-    console.log(cart);
     $("#cartCount").html(cart.length.toString())
 }

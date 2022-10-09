@@ -18,7 +18,6 @@ function addToCartListener() {
     $(".books-item-details button").on("click", function (e) {
         let bookID = e.currentTarget.id;
         MODEL.addToCart(bookID);
-        console.log(bookID);
     })
 }
 
