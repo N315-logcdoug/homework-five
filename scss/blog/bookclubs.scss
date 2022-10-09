@@ -1,0 +1,30 @@
+.blog-hero {
+  width: 1500px;
+  background-image: url("../images/book-club-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  padding-top: 90px;
+}
+
+.bookclubs-section {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 300px;
+  padding-left: 70px;
+}
+
+.bookclubs-section img {
+  width: 700px;
+}
+
+.bookclubs-text {
+  margin-left: 40px;
+}
+
+.bookclubs-text p {
+  font-family: SegoeRegular;
+  font-size: 13px;
+}

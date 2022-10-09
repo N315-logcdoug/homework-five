@@ -1,0 +1,30 @@
+.blog-hero {
+  width: 1500px;
+  background-image: url("../images/eread-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  padding-top: 90px;
+}
+
+.e-reading-section {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 300px;
+  padding-left: 70px;
+}
+
+.e-reading-section img {
+  width: 700px;
+}
+
+.e-reading-text {
+  margin-left: 40px;
+}
+
+.e-reading-text p {
+  font-family: SegoeRegular;
+  font-size: 13px;
+}

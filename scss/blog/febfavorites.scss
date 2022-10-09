@@ -1,0 +1,55 @@
+.blog-hero {
+  width: 1500px;
+  background-image: url("../images/february-favorites-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  padding-top: 90px;
+}
+
+.blog-hero-title {
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.blog-hero-title h1 {
+  font-family: SegoeBold;
+}
+
+.blog-hero-title h2 {
+  font-family: SegoeBold;
+  font-size: 21px;
+}
+
+.blog-hero-title p {
+  font-family: SegoeBold;
+  font-size: 12px;
+}
+
+.february-favorites-list {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 300px;
+  padding-left: 70px;
+}
+
+.february-favorites-list img {
+  width: 200px;
+}
+
+.blog-texts {
+  margin-left: 40px;
+}
+
+.blog-texts h2 {
+  font-family: SegoeBold;
+  font-size: 20px;
+}
+
+.blog-texts p {
+  font-family: SegoeBold;
+  font-size: 13px;
+}
