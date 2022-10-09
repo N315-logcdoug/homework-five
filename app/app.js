@@ -6,10 +6,20 @@ function changeRoute() {
     //   console.log(hashTag + ' ' + pageID);
     if (pageID == "" || pageID == "home") {
         MODEL.changePage(pageID);
+    } else if (pageID == "books") {
+        MODEL.changePage(pageID, addToCartListener);
     } else {
         MODEL.changePage(pageID);
     }
 
+}
+
+function addToCartListener() {
+    $(".books-item-details button").on("click", function (e) {
+        let bookID = e.currentTarget.id;
+        MODEL.addToCart(bookID);
+        console.log(bookID);
+    })
 }
 
 function initURLListener() {
