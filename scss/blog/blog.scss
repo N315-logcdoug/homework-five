@@ -1,0 +1,76 @@
+.blog-rectangle {
+  background-color: #587C83;
+  height: 400px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.blog-books-picture {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+}
+
+.blog-books-picture img {
+  height: 310px;
+  margin-top: 45px;
+  padding-left: 140px;
+}
+
+.blog-featured-paragraph {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  padding-top: 84px;
+}
+
+.blog-featured-paragraph h2 {
+  font-family: SegoeBold;
+  color: white;
+}
+
+.blog-featured-paragraph p {
+  font-family: SegoeRegular;
+  color: white;
+}
+
+.blog-featured-button {
+  font-size: 15px;
+  padding-top: 45px;
+  background-color: #587C83;
+  border: 2px solid white;
+  text-align: center;
+  height: 100px;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 13px;
+}
+
+.blog-featured-button p {
+  font-family: SegoeRegular;
+}
+
+.open-books-picture {
+  display: flex;
+}
+
+.open-books-picture img {
+  height: 400px;
+}
+
+.book-featured-paragraph {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  color: white;
+  padding-top: 55px;
+}
+
+.book-featured-paragraph h2 {
+  font-family: SegoeBold;
+}
+
+.book-featured-paragraph p {
+  font-family: SegoeRegular;
+}
