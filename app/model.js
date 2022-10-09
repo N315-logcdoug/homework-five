@@ -75,6 +75,8 @@ var books = [
 
 var cart = [];
 
+var loggedIn = false;
+
 export function changePage(pageID, callback) {
     navMenuChange("closed");
     if (pageID == '' || pageID == "home") {
@@ -92,22 +94,27 @@ export function changePage(pageID, callback) {
             $.each(cart, function (idx, cartItem) {
                 let book = books[cartItem];
                 $(".cart").append(`<div class="cart-item">
-                <img src="${book.image}" alt="" class="cart-item-img" />
-                <div class="cart-item-info">
-                  <p class="cart-item-title">${book.title}</p>
-                  <p class="cart-item-cost">$${book.price}</p>
-                  <p class="cart-item-stock">In Stock</p>
-                  <div class="cart-item-options">
-                    <p class="cart-item-qty">Qty:</p>
-                    <a href="#books" class="cart-item-change">change</a>
-                    <p>|</p>
-                    <a href="" class="cart-item-delete">delete</a>
-                  </div>
-                </div>
-              </div>`)
+                    <img src="${book.image}" alt="" class="cart-item-img" />
+                    <div class="cart-item-info">
+                      <p class="cart-item-title">${book.title}</p>
+                      <p class="cart-item-cost">$${book.price}</p>
+                      <p class="cart-item-stock">In Stock</p>
+                      <div class="cart-item-options">
+                        <p class="cart-item-qty">Qty:</p>
+                        <a href="#books" class="cart-item-change">change</a>
+                        <p>|</p>
+                        <a href="" class="cart-item-delete">delete</a>
+                      </div>
+                    </div>
+                  </div>`)
             })
         });
-
+    }
+    else if (pageID == "account") {
+        $.get(`pages/${pageID}.html`, function (data) {
+            $('#app').html(data);
+            callback();
+        });
     } else {
         $.get(`pages/${pageID}.html`, function (data) {
             $('#app').html(data);
@@ -122,4 +129,14 @@ export function navMenuChange(value) {
 export function addToCart(itemID) {
     cart.push(itemID);
     $("#cartCount").html(cart.length.toString())
+}
+
+export function login() {
+    loggedIn = true;
+    console.log(loggedIn);
+    changePage("home");
+};
+
+export function getLoginStatus() {
+    return loggedIn;
 }
