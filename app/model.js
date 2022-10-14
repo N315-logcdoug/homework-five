@@ -91,8 +91,9 @@ export function changePage(pageID, callback) {
     } else if (pageID == "cart") {
         $.get(`pages/${pageID}.html`, function (data) {
             $('#app').html(data);
+
             $.each(cart, function (idx, cartItem) {
-                let book = books[cartItem];
+                let book = books[cartItem.id];
                 $(".cart").append(`<div class="cart-item">
                     <img src="${book.image}" alt="" class="cart-item-img" />
                     <div class="cart-item-info">
@@ -100,7 +101,7 @@ export function changePage(pageID, callback) {
                       <p class="cart-item-cost">$${book.price}</p>
                       <p class="cart-item-stock">In Stock</p>
                       <div class="cart-item-options">
-                        <p class="cart-item-qty">Qty:</p>
+                        <p class="cart-item-qty">Qty: ${cartItem.qty}</p>
                         <a href="#books" class="cart-item-change">change</a>
                         <p>|</p>
                         <a href="" class="cart-item-delete">delete</a>
@@ -127,7 +128,16 @@ export function navMenuChange(value) {
 }
 
 export function addToCart(itemID) {
-    cart.push(itemID);
+    let isDuplicate = false;
+    cart.forEach(cartItem => {
+        if (cartItem.id == itemID) {
+            cartItem.qty++;
+            isDuplicate = true;
+        }
+    })
+    if (isDuplicate == false) {
+        cart.push({ id: itemID, qty: 1 });
+    }
     $("#cartCount").html(cart.length.toString())
 }
 

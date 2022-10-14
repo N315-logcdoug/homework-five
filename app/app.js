@@ -10,11 +10,12 @@ function changeRoute() {
     } else if (pageID == "account") {
         MODEL.changePage(pageID, loginListener);
     } else if (pageID == "cart") {
-        if (MODEL.getLoginStatus() == true) {
-            MODEL.changePage("cart");
-        } else {
-            MODEL.changePage("account", loginListener);
-        }
+        // if (MODEL.getLoginStatus() == true) {
+        //     MODEL.changePage("cart");
+        // } else {
+        //     MODEL.changePage("account", loginListener);
+        // }
+        MODEL.changePage("cart");
     } else {
         MODEL.changePage(pageID);
     }
