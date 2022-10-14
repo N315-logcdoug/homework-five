@@ -15,7 +15,7 @@ function changeRoute() {
         // } else {
         //     MODEL.changePage("account", loginListener);
         // }
-        MODEL.changePage("cart");
+        MODEL.changePage("cart", cartDeleteListener);
     } else {
         MODEL.changePage(pageID);
     }
@@ -26,6 +26,13 @@ function addToCartListener() {
     $(".books-item-details button").on("click", function (e) {
         let bookID = e.currentTarget.id;
         MODEL.addToCart(bookID);
+    })
+}
+
+function cartDeleteListener() {
+    $(".cart-item-delete").on("click", function (e) {
+        let cartItemID = e.currentTarget.id;
+        MODEL.cartDelete(cartItemID);
     })
 }
 

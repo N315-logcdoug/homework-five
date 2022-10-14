@@ -42,6 +42,10 @@
                 flex-direction: row;
                 font-family: SegoeRegular;
                 font-size: 16px;
+
+                .cart-item-delete{
+                    cursor: pointer;
+                }
             }
         }
     }
