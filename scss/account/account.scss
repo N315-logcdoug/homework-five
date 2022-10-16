@@ -7,17 +7,105 @@
     .account-header {
         font-family: SegoeRegular;
         font-size: 26px;
+        margin: 0;
+    }
+
+    .account-sub {
+        font-size: 16px;
+        font-family: SegoeRegular;
+        margin: 0;
     }
 
     .login {
         width: 233px;
         display: flex;
         flex-direction: column;
+        gap: 45px;
+
+        #login-pw, #login-email {
+            border: none;
+            font-size: 16px;
+            font-family: SegoeRegular;
+            height: 22px;
+            border-bottom: 1px solid $site-black;
+        }
+
+        #login-submit {
+            width: 170px;
+            height: 45px;
+            align-self: center;
+            border: none;
+            font-size: 16px;
+            font-family: SegoeRegular;
+            color: $site-white;
+            background-color: $site-teal;
+            cursor: pointer;
+        }
     }
 
     .signup {
         width: 233px;
         display: flex;
         flex-direction: column;
+
+        .account-header {
+            margin-bottom: 45px;
+        }
+
+        #signup-pw, #signup-email, #f-name, #l-name {
+            border: none;
+            font-size: 16px;
+            font-family: SegoeRegular;
+            height: 22px;
+            border-bottom: 1px solid $site-black;
+            margin-bottom: 45px;
+        }
+
+        #signup-submit {
+            width: 170px;
+            height: 45px;
+            align-self: center;
+            border: none;
+            font-size: 16px;
+            font-family: SegoeRegular;
+            color: $site-white;
+            background-color: $site-teal;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .account-container{
+        flex-direction: column;
+        gap: 90px;
+
+        .account-header {
+            font-family: SegoeRegular;
+            font-size: 12px;
+        }
+    
+        .account-sub {
+            font-size: 11px;
+            font-family: SegoeRegular;
+        }
+
+
+        .login {
+            #login-pw, #login-email {
+                font-size: 11px;
+                font-family: SegoeRegular;
+                height: 15px;
+            }
+        }
+        
+        .signup {
+            #signup-pw, #signup-email, #f-name, #l-name {
+                font-size: 11px;
+                font-family: SegoeRegular;
+                height: 15px;
+            }
+        }
+        
     }
 }

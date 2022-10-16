@@ -1,53 +1,65 @@
 .blog-rectangle {
   background-color: #587C83;
   height: 400px;
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   margin-top: 55px;
+  margin-bottom: 140px;
 }
 
 .blog-books-picture {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: left;
+  align-items: center;
+
+  .blog-featured-img-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 88px;
+    margin-top: 42px;
+  }
 }
 
 .blog-books-picture img {
   height: 310px;
-  margin-top: 45px;
-  padding-left: 140px;
 }
 
 .blog-featured-paragraph {
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  padding-top: 84px;
-}
+  //padding-top: 84px;
+  width: 100%;
 
-.blog-featured-paragraph h2 {
-  font-family: SegoeBold;
-  color: white;
-}
+  h2 {
+    font-family: SegoeBold;
+    color: white;
+  }
 
-.blog-featured-paragraph p {
-  font-family: SegoeRegular;
-  color: white;
+  p {
+    font-family: SegoeRegular;
+    color: white;
+    width: 413px;
+    text-align: center;
+    align-self: center;
+  }
+
+  
 }
 
 .blog-featured-button {
+  @include button;
   font-size: 15px;
-  padding-top: 45px;
   background-color: #587C83;
   border: 2px solid white;
+  color: $site-white;
   text-align: center;
-  height: 100px;
-  width: 190px;
   margin: 0 auto;
   margin-top: 13px;
-}
-
-.blog-featured-button p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: SegoeRegular;
 }
 
@@ -64,7 +76,8 @@
   flex-flow: column nowrap;
   text-align: center;
   color: white;
-  padding-top: 55px;
+  width: 100%;
+  justify-content: center;
 }
 
 .book-featured-paragraph h2 {
@@ -73,4 +86,62 @@
 
 .book-featured-paragraph p {
   font-family: SegoeRegular;
+  width: 413px;
+  align-self: center;
+}
+
+@media screen and (max-width: 1440px){
+  .blog-rectangle{
+    width: 552px;
+    height: 229px;
+
+
+  }
+
+  .blog-books-picture {
+    .blog-featured-img-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      margin-left: 55px;
+      margin-top: 42px;
+      
+
+    }
+
+    
+  }
+  .blog-books-picture img {
+    height: 146px;
+  }
+
+  .blog-featured-paragraph {
+    h2 {
+      font-size: 12px;
+    }
+  
+    p {
+      font-size: 11px;
+      width: 223px;
+    }
+  
+    
+  }
+
+  .blog-featured-button {
+    @include button;
+    width: 89px;
+    height: 34px;
+    font-size: 12px;
+    background-color: #587C83;
+    border: 2px solid white;
+    color: $site-white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: SegoeRegular;
+  }
 }
