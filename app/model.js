@@ -70,6 +70,24 @@ var books = [
         title: "Fun Facts About Space",
         image: "images/fun-facts-about-space.jpg",
         price: 7.99,
+    },
+    {
+        id: 12,
+        title: "To Kill a Mockingbird",
+        image: "images/to-kill-a-mockingbird.jpg",
+        price: 15.99,
+    },
+    {
+        id: 13,
+        title: "Becoming",
+        image: "images/becoming.jpg",
+        price: 25.99,
+    },
+    {
+        id: 14,
+        title: "Firestarter",
+        image: "images/firestarter.jpg",
+        price: 19.99,
     }
 ];
 
@@ -82,6 +100,7 @@ export function changePage(pageID, callback) {
     if (pageID == '' || pageID == "home") {
         $.get(`pages/home.html`, function (data) {
             $('#app').html(data);
+            callback();
         });
     } else if (pageID == "books") {
         $.get(`pages/${pageID}.html`, function (data) {

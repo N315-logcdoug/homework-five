@@ -4,7 +4,7 @@ function changeRoute() {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace('#', '');
     if (pageID == "" || pageID == "home") {
-        MODEL.changePage(pageID);
+        MODEL.changePage(pageID, homeAddToCartListener);
     } else if (pageID == "books") {
         MODEL.changePage(pageID, addToCartListener);
     } else if (pageID == "account") {
@@ -22,8 +22,15 @@ function changeRoute() {
 
 }
 
+function homeAddToCartListener() {
+    $(".add-to-cart-button").on("click", function (e) {
+        let bookID = e.currentTarget.id;
+        MODEL.addToCart(bookID);
+    })
+}
+
 function addToCartListener() {
-    $(".books-item-details button").on("click", function (e) {
+    $(".add-to-cart").on("click", function (e) {
         let bookID = e.currentTarget.id;
         MODEL.addToCart(bookID);
     })
