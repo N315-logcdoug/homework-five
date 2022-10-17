@@ -10,12 +10,12 @@ function changeRoute() {
     } else if (pageID == "account") {
         MODEL.changePage(pageID, loginListener);
     } else if (pageID == "cart") {
-        // if (MODEL.getLoginStatus() == true) {
-        //     MODEL.changePage("cart");
-        // } else {
-        //     MODEL.changePage("account", loginListener);
-        // }
-        MODEL.changePage("cart", cartDeleteListener);
+        if (MODEL.getLoginStatus() == true) {
+            MODEL.changePage("cart", cartDeleteListener);
+        } else {
+            MODEL.changePage("account", loginListener);
+        }
+        //MODEL.changePage("cart", cartDeleteListener);
     } else {
         MODEL.changePage(pageID);
     }
@@ -91,6 +91,8 @@ function loginListener() {
             alert('Please enter your password')
         } else {
             alert('Account registered')
+            window.location.hash = "home";
+            window.location.hash = "account";
         }
     });
 }
