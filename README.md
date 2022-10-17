@@ -10,3 +10,5 @@ For this fifth assignment, Logan and I (Tom Tran - study leader) have created an
 - An habit of using the GitHub Desktop to fetch origin
 - Commit the code with collaboration
 - Added the alert and modal on our site
+
+Even though this is a complicated website to design, we finally survived the trials of "creating this site." This is by far the most accomplished to create!
