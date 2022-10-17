@@ -9,3 +9,4 @@ For this fifth assignment, Logan and I (Tom Tran - study leader) have created an
 - SCSS
 - An habit of using the GitHub Desktop to fetch origin
 - Commit the code with collaboration
+- Added the alert and modal on our site
