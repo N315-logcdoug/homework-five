@@ -14,6 +14,7 @@ function changeRoute() {
             MODEL.changePage("cart", cartDeleteListener);
         } else {
             MODEL.changePage("account", loginListener);
+            alert("You must be logged in to use the cart");
         }
         //MODEL.changePage("cart", cartDeleteListener);
     } else {
