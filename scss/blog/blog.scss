@@ -5,6 +5,7 @@
   margin: 0 auto;
   margin-top: 55px;
   margin-bottom: 140px;
+  overflow: hidden;
 }
 
 .blog-books-picture {
@@ -35,6 +36,9 @@
   h2 {
     font-family: SegoeBold;
     color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   p {
@@ -43,6 +47,8 @@
     width: 413px;
     text-align: center;
     align-self: center;
+    margin: 0;
+    margin-bottom: 10px;
   }
 
   
@@ -65,10 +71,12 @@
 
 .open-books-picture {
   display: flex;
+  overflow: hidden;
 }
 
 .open-books-picture img {
-  height: 400px;
+  //height: 400px;
+  width: 622px;
 }
 
 .book-featured-paragraph {
@@ -143,5 +151,93 @@
     align-items: center;
     justify-content: center;
     font-family: SegoeRegular;
+  }
+
+  .open-books-picture img {
+    height: 229px;
+    width: 300px;
+  }
+  
+  .book-featured-paragraph h2 {
+    font-family: SegoeBold;
+    font-size: 12px;
+  }
+  
+  .book-featured-paragraph p {
+    font-family: SegoeRegular;
+    font-size: 11px;
+    width: 223px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .blog-rectangle{
+    width: 318px;
+    height: 118px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+
+  .blog-books-picture {
+    .blog-featured-img-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      margin-left: 18px;
+      margin-top: 16px;
+    }
+
+    
+  }
+  .blog-books-picture img {
+    height: 69px;
+  }
+
+  .blog-featured-paragraph {
+    h2 {
+      font-size: 6px;
+    }
+  
+    p {
+      font-size: 6px;
+      width: 146px;
+    }
+  
+    
+  }
+
+  .blog-featured-button {
+    @include button;
+    width: 80px;
+    height: 22px;
+    font-size: 6px;
+    background-color: #587C83;
+    border: 2px solid white;
+    color: $site-white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: SegoeRegular;
+  }
+
+  .open-books-picture img {
+    height: 118px;
+    width: 165px;
+  }
+  
+  .book-featured-paragraph h2 {
+    font-family: SegoeBold;
+    font-size: 6px;
+  }
+  
+  .book-featured-paragraph p {
+    font-family: SegoeRegular;
+    font-size: 6px;
+    width: 146px;
+    align-self: center;
   }
 }
